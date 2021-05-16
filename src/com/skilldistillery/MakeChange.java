@@ -43,44 +43,44 @@ public class MakeChange {
 		if (change >= tenDollarBill) {
 			int changeTenDollarBill = (int)(change / tenDollarBill); 
 			change = change % tenDollarBill; 
-			System.out.println(changeTenDollarBill + " $10 bill");
+			System.out.println(changeTenDollarBill + (changeTenDollarBill == 1 ? " $10 bill" : " $10 bills"));
 		}
 		
 		if (change >= fiveDollarBill) {
 			int changeFiveDollarBill = (int)(change / fiveDollarBill); 
 			change = change % fiveDollarBill; 
-			System.out.println(changeFiveDollarBill + " $5 bill");
+			System.out.println(changeFiveDollarBill + (changeFiveDollarBill == 1 ? " $5 bill" : " $5 bills"));
 		}
 		
 		if (change >= oneDollarBill) {
 			int changeOneDollarBill = (int)(change / oneDollarBill); 
 			change = change % oneDollarBill; 
-			System.out.println(changeOneDollarBill + " $1 bill");
+			System.out.println(changeOneDollarBill + (changeOneDollarBill == 1 ? " $1 bill" : " $1 bills"));
 		
 		}
 		
 		if (change >= quarter) {
-			int amountQuarter = (int)(change / (quarter)); 
+			int amountQuarter = (int)(change / quarter); 
 			change = ((change) % quarter); 
-			System.out.println(amountQuarter + " quarter");
+			System.out.println(amountQuarter + (amountQuarter == 1 ? " quarter" : " quarters"));
 		}
 		
 		if (change >= dime) {
 			int amountDime = (int)(change / dime); 
 			change = ((change) % dime); 
-			System.out.println(amountDime + " dime");
+			System.out.println(amountDime + (amountDime == 1 ? " dime" : " dimes"));
 		}
 		
 		if (change >= nickel) {
 			int amountNickel = (int)(change / nickel); 
 			change = ((change) % nickel); 
-			System.out.println(amountNickel + " nickel");
+			System.out.println(amountNickel + (amountNickel == 1 ? " nickel" : " nickels"));
 		}
 		
 		if (change >= penny) {
 			int amountPenny = (int)(change / penny); 
 			change = ((change) % penny); 
-			System.out.println(amountPenny + " penny");
+			System.out.println(amountPenny + (amountPenny == 1 ? " penny" : " pennies"));
 		}
 		
 		scanner.close(); 
