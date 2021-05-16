@@ -2,16 +2,16 @@
 
 ### Overview
 
-This program simulates a cash register and provides change to customers in the United States Dollar (USD), returning change in descending denominations.  
+This program simulates a cash register and provides change to customers in the United States Dollar (USD), returning it in descending denominations.  
 
 ### Technologies Used
 
--Scanner
 -Java
+-Scanner
 -Conditionals
 -Looping
--mods
--conversions
+-Mods
+-Conversions
 
 ### How to Run
 
@@ -19,4 +19,4 @@ After running the makeChange.java program, the user will be prompted with: "Plea
 
 ### Lessons Learned
 
-During the course of this program's development, a key lesson learned was the propensity of rounding errors when declaring variables with floating numbers.  While the program ran without any detectable bugs for the majority of the simulation, rounding errors occurred in calculations where nickels and pennies were used.  It was necessary to convert to integer variables and calculate for the lowest common denominator (penny) for the program to run accurately for all denominations.  
+During the course of this program's development, a key lesson learned was the propensity of rounding errors when declaring floating variables.  While the program ran without any detectable bugs for the majority of the simulation, rounding errors occurred in calculations where nickels and pennies were used.  It was necessary to convert to integer variables and calculate for the lowest common denominator (penny) for the program to run accurately for all denominations.  
